@@ -114,8 +114,5 @@ public class Radio {
         return minRadioStation;
     }
 
-    public int getAllRadioStations() {
-        return allRadioStations;
-    }
-}
 
+    }

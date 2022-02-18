@@ -146,11 +146,6 @@ class RadioTest {
         assertEquals(5, radio.getCurrentRadioStation(), "Установка количества радиостанций");
     }
 
-    @Test
-    void shouldSetNumberMax() {
-        Radio rad = new Radio(30);
-        rad.setCurrentRadioStation(30);
-        rad.selectingTheWrongRadioStationNumber();
-        assertEquals(0, rad.getCurrentRadioStation(), "Негативное максимальное граничное значение");
-    }
-}
+
+
+        }
