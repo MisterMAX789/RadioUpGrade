@@ -48,7 +48,7 @@ class RadioTest {
     void shouldShowNegativeStationMax() {
         Radio radio = new Radio(10);
         radio.setStations(11);
-        assertEquals(5, radio.getCurrentRadioStation(), "Негативное max значение");
+        assertEquals(4, radio.getCurrentRadioStation(), "Негативное max значение");
     }
 
     @Test
@@ -71,7 +71,7 @@ class RadioTest {
     void shouldSetNegativeNumberOfStations() {
         Radio radio = new Radio();
         radio.setStations(-1);
-        assertEquals(5, radio.getCurrentRadioStation(), "Номер радиостанции. Отрицательное  значение");
+        assertEquals(4, radio.getCurrentRadioStation(), "Номер радиостанции. Отрицательное  значение");
     }
 
 
@@ -87,7 +87,7 @@ class RadioTest {
     void shouldChangeTheNextStation() {
         Radio rad = new Radio();
         rad.selectingTheWrongRadioStationNumber();
-        assertEquals(6, rad.getCurrentRadioStation(), "Следующий канал");
+        assertEquals(5, rad.getCurrentRadioStation(), "Следующий канал");
     }
 
     @Test
@@ -102,7 +102,7 @@ class RadioTest {
     void shouldChangeTheStation() {
         Radio rad = new Radio();
         rad.changeTheStationByPrevButton();
-        assertEquals(4, rad.getCurrentRadioStation(), "Предыдущий канал");
+        assertEquals(3, rad.getCurrentRadioStation(), "Предыдущий канал");
     }
 
 
@@ -143,12 +143,12 @@ class RadioTest {
     void shouldSetNumberOfRadioStationsNegative() {
         Radio radio = new Radio(100);
         radio.setAllRadioStations(101);
-        assertEquals(5, radio.getCurrentRadioStation(), "Установка количества радиостанций");
+        assertEquals(4, radio.getCurrentRadioStation(), "Установка количества радиостанций");
     }
 
     @Test
     void shouldSetNumberMax() {
-        Radio rad = new Radio(30);
+         Radio rad = new Radio(30);
         rad.setCurrentRadioStation(30);
         rad.selectingTheWrongRadioStationNumber();
         assertEquals(0, rad.getCurrentRadioStation(), "Негативное максимальное граничное значение");

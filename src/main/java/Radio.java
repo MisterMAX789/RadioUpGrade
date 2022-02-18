@@ -3,7 +3,7 @@ public class Radio {
     private int maxRadioVolume = 100;
     private int minRadioVolume = 0;
 
-    private int currentRadioStation = 5;
+    private int currentRadioStation = 4;
     private int maxRadioStation = 9;
     private int allRadioStations = 10;
     private int minRadioStation = 0;
@@ -114,8 +114,9 @@ public class Radio {
         return minRadioStation;
     }
 
-    public int getAllRadioStations() {
+     public int getAllRadioStations() {
         return allRadioStations;
+
     }
 }
 
